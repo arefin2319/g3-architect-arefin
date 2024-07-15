@@ -30,6 +30,10 @@
     border: none;
 
 }
+.section{
+    margin
+}
+ 
   /* header styles */
 
 
@@ -71,9 +75,27 @@ margin-right: 30px;
  .banner-image{
     width: 100%;
  }
+ /* teams related style */
 
+ .teams{
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+ }
+ .team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+ }
  /* responsive media query */
 
  @media screen and (max-width: 576px) {
-    
+    .navbar, .nav-links, .teams {
+        flex-direction: column;
+    }
+    .team-image-container{
+      display: grid;
+      grid-template-columns: repeat(1,1fr)
  }
